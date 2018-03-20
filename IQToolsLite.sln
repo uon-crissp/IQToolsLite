@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQToolsLite", "IQToolsLite\IQToolsLite.csproj", "{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "IQToolsLite.Setup", "IQToolsLite.Setup\IQToolsLite.Setup.vdproj", "{7526B6D0-F206-4751-8480-1572623EFD71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Debug|x64.ActiveCfg = Debug|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Debug|x86.ActiveCfg = Debug|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Debug|x86.Build.0 = Debug|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Release|Any CPU.ActiveCfg = Release|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Release|x64.ActiveCfg = Release|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Release|x86.ActiveCfg = Release|x86
+		{E8A2DB6B-8FFB-4FA3-B70E-AA2BA5F5329D}.Release|x86.Build.0 = Release|x86
+		{7526B6D0-F206-4751-8480-1572623EFD71}.Debug|Any CPU.ActiveCfg = Debug
+		{7526B6D0-F206-4751-8480-1572623EFD71}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{7526B6D0-F206-4751-8480-1572623EFD71}.Debug|x64.ActiveCfg = Debug
+		{7526B6D0-F206-4751-8480-1572623EFD71}.Debug|x86.ActiveCfg = Debug
+		{7526B6D0-F206-4751-8480-1572623EFD71}.Release|Any CPU.ActiveCfg = Release
+		{7526B6D0-F206-4751-8480-1572623EFD71}.Release|Mixed Platforms.ActiveCfg = Release
+		{7526B6D0-F206-4751-8480-1572623EFD71}.Release|x64.ActiveCfg = Release
+		{7526B6D0-F206-4751-8480-1572623EFD71}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69C224AE-6F15-41DA-B191-D45150CDE499}
+	EndGlobalSection
+EndGlobal
