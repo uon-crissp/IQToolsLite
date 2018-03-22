@@ -4,9 +4,47 @@
     <item name="dbo" case_sens="0" />
   </default_schemas>
   <view>
-   
     <schema name="dbo" case_sens="0" />
-    <name name="IQC_bWAB" case_sens="0" />
+    <name name="IQC_FirstVL" case_sens="0" />
+    <system>0</system>
+    <visible>1</visible>
+    <fields>
+      <field>
+        <name>
+          <item name="PatientPK" case_sens="1" />
+        </name>
+        <type_name>int</type_name>
+        <type platform="net">Int32</type>
+        <size>4</size>
+        <precision>10</precision>
+        <scale>255</scale>
+      </field>     
+      <field>
+        <name>
+          <item name="FirstVL" case_sens="1" />
+        </name>
+        <type_name>int</type_name>
+        <type platform="net">Int32</type>
+        <size>4</size>
+        <precision>10</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="FirstVLDate" case_sens="1" />
+        </name>
+        <type_name>datetime</type_name>
+        <type platform="net">DateTime</type>
+        <size>8</size>
+        <precision>23</precision>
+        <scale>3</scale>
+      </field>
+    </fields>
+  </view>
+  
+  <view>
+    <schema name="dbo" case_sens="0" />
+    <name name="IQC_LastVL" case_sens="0" />
     <system>0</system>
     <visible>1</visible>
     <fields>
@@ -22,7 +60,7 @@
       </field>
       <field>
         <name>
-          <item name="FacilityID" case_sens="1" />
+          <item name="LastVL" case_sens="1" />
         </name>
         <type_name>int</type_name>
         <type platform="net">Int32</type>
@@ -32,17 +70,7 @@
       </field>
       <field>
         <name>
-          <item name="bWAB" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="bWABDate" case_sens="1" />
+          <item name="LastVLDate" case_sens="1" />
         </name>
         <type_name>datetime</type_name>
         <type platform="net">DateTime</type>
@@ -52,8 +80,8 @@
       </field>
     </fields>
   </view>
-  <view>
-   
+  
+  <view>   
     <schema name="dbo" case_sens="0" />
     <name name="IQC_bWHO" case_sens="0" />
     <system>0</system>
@@ -91,6 +119,7 @@
       </field>
     </fields>
   </view>
+  
   <view>
  
     <schema name="dbo" case_sens="0" />
@@ -140,56 +169,8 @@
         <scale>3</scale>
       </field>
     </fields>
-  </view>
-  <view>
-
-    <schema name="dbo" case_sens="0" />
-    <name name="IQC_eWAB" case_sens="0" />
-    <system>0</system>
-    <visible>1</visible>
-    <fields>
-      <field>
-        <name>
-          <item name="PatientPK" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="FacilityID" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="eWAB" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="eWABDate" case_sens="1" />
-        </name>
-        <type_name>datetime</type_name>
-        <type platform="net">DateTime</type>
-        <size>8</size>
-        <precision>23</precision>
-        <scale>3</scale>
-      </field>
-    </fields>
-  </view>
+  </view>  
+  
   <view>
 
     <schema name="dbo" case_sens="0" />
@@ -229,6 +210,7 @@
       </field>
     </fields>
   </view>
+  
   <view>
 
     <schema name="dbo" case_sens="0" />
@@ -279,55 +261,7 @@
       </field>
     </fields>
   </view>
-  <view>
-
-    <schema name="dbo" case_sens="0" />
-    <name name="IQC_lastWAB" case_sens="0" />
-    <system>0</system>
-    <visible>1</visible>
-    <fields>
-      <field>
-        <name>
-          <item name="PatientPK" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="FacilityID" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="lastWAB" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="lastWABDate" case_sens="1" />
-        </name>
-        <type_name>datetime</type_name>
-        <type platform="net">DateTime</type>
-        <size>8</size>
-        <precision>23</precision>
-        <scale>3</scale>
-      </field>
-    </fields>
-  </view>
+  
   <view>
 
     <schema name="dbo" case_sens="0" />
@@ -367,6 +301,7 @@
       </field>
     </fields>
   </view>
+  
   <view>
 
     <schema name="dbo" case_sens="0" />
@@ -417,6 +352,7 @@
       </field>
     </fields>
   </view>
+  
   <view>
 
     <schema name="dbo" case_sens="0" />
@@ -466,7 +402,8 @@
         <scale>3</scale>
       </field>
     </fields>
-  </view>
+  </view>  
+  
   <view>
 
     <schema name="dbo" case_sens="0" />
@@ -583,6 +520,7 @@
       </field>
     </fields>
   </view>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -885,7 +823,7 @@
       </field>
       <field>
         <name>
-          <item name="DateConfirmedHIVPositive" case_sens="1" />
+          <item name="HIVTestDate" case_sens="1" />
         </name>
         <type_name>datetime</type_name>
         <type platform="net">DateTime</type>
@@ -913,38 +851,12 @@
         <precision>23</precision>
         <scale>3</scale>
       </field>
-      <field>
-        <name>
-          <item name="StatusAtCCC" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>50</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="StatusAtPMTCT" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>50</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="StatusAtTBClinic" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>50</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
+      
+      
+      
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -1065,6 +977,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -1166,6 +1079,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -1244,16 +1158,7 @@
         <precision>10</precision>
         <scale>255</scale>
       </field>
-      <field>
-        <name>
-          <item name="WABStage" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>250</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
+      
       <field>
         <name>
           <item name="Pregnant" case_sens="1" />
@@ -1306,12 +1211,22 @@
       </field>
       <field>
         <name>
-          <item name="BP" case_sens="1" />
+          <item name="BPS" case_sens="1" />
         </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>7</size>
-        <precision>255</precision>
+        <type_name>int</type_name>
+        <type platform="net">Int32</type>
+        <size>4</size>
+        <precision>10</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="BPD" case_sens="1" />
+        </name>
+        <type_name>int</type_name>
+        <type platform="net">Int32</type>
+        <size>4</size>
+        <precision>10</precision>
         <scale>255</scale>
       </field>
       <field>
@@ -1374,26 +1289,8 @@
         <precision>255</precision>
         <scale>255</scale>
       </field>
-      <field>
-        <name>
-          <item name="Comments" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="CommentsCategory" case_sens="1" />
-        </name>
-        <type_name>int</type_name>
-        <type platform="net">Int32</type>
-        <size>4</size>
-        <precision>10</precision>
-        <scale>255</scale>
-      </field>
+      
+      
       <field>
         <name>
           <item name="Adherence" case_sens="1" />
@@ -1423,57 +1320,9 @@
         <size>250</size>
         <precision>255</precision>
         <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="PwP" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>250</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="FeedingOption" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>250</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="Immunisation" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>250</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
-      <field>
-        <name>
-          <item name="GestationAge" case_sens="1" />
-        </name>
-        <type_name>decimal</type_name>
-        <type platform="net">Decimal</type>
-        <size>17</size>
-        <precision>18</precision>
-        <scale>2</scale>
-      </field>
-      <field>
-        <name>
-          <item name="PMTCTMedication" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>5</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
+      </field>    
+            
+            
       <field>
         <name>
           <item name="NextAppointmentDate" case_sens="1" />
@@ -1484,16 +1333,7 @@
         <precision>23</precision>
         <scale>3</scale>
       </field>
-      <field>
-        <name>
-          <item name="NextAppointmentReason" case_sens="1" />
-        </name>
-        <type_name>varchar</type_name>
-        <type platform="net">String</type>
-        <size>250</size>
-        <precision>255</precision>
-        <scale>255</scale>
-      </field>
+      
       <field>
         <name>
           <item name="DataManagerName" case_sens="1" />
@@ -1546,6 +1386,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -1616,6 +1457,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -1907,6 +1749,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -2019,6 +1862,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -2186,6 +2030,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -2428,6 +2273,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -2549,6 +2395,7 @@
       </field>
     </fields>
   </table>
+    
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -2729,6 +2576,7 @@
       </field>
     </fields>
   </table>
+  
   <table>
 
     <schema name="dbo" case_sens="0" />
@@ -2829,6 +2677,299 @@
       </field>
     </fields>
   </table>
+
+  <table>
+
+    <schema name="dbo" case_sens="0" />
+    <name name="tmp_PwPServices" case_sens="0" />
+    <system>0</system>
+    <visible>1</visible>
+    <fields>
+      <field>
+        <name>
+          <item name="PatientPK" case_sens="0" />
+        </name>
+        <type_name>int</type_name>
+        <type platform="net">Int32</type>
+        <size>4</size>
+        <precision>10</precision>
+        <scale>255</scale>
+        <nullable>0</nullable>
+      </field>
+      <field>
+        <name>
+          <item name="VisitDate" case_sens="0" />
+        </name>
+        <type_name>datetime</type_name>
+        <type platform="net">DateTime</type>
+        <size>8</size>
+        <precision>23</precision>
+        <scale>3</scale>
+      </field>
+      <field>
+        <name>
+          <item name="PartnerHIVTesting" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="ProvidedWithCondoms" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="PartnerDisclosure" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="ModernContraception" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="STIScreening" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="CouplesCounselling" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="AdherenceCounselling" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="NeedleAndSyringeProgramme" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="OtherPwPService" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+    </fields>
+  </table>
+
+  <table>
+    <schema name="dbo" case_sens="0" />
+    <name name="tmp_KeyPops" case_sens="0" />
+    <system>0</system>
+    <visible>1</visible>
+    <fields>
+      <field>
+        <name>
+          <item name="PatientPK" case_sens="0" />
+        </name>
+        <type_name>int</type_name>
+        <type platform="net">Int32</type>
+        <size>4</size>
+        <precision>10</precision>
+        <scale>255</scale>
+        <nullable>0</nullable>
+      </field>
+      <field>
+        <name>
+          <item name="VisitDate" case_sens="0" />
+        </name>
+        <type_name>datetime</type_name>
+        <type platform="net">DateTime</type>
+        <size>8</size>
+        <precision>23</precision>
+        <scale>3</scale>
+      </field>
+      <field>
+        <name>
+          <item name="SexWorker" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="PeopleWhoInjectDrugs" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="MenWhoHaveSexWithMen" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="ClientsToSexWorkers" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="DiscordantCouple" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>      
+    </fields>
+  </table>
+
+  <table>
+    <schema name="dbo" case_sens="0" />
+    <name name="tmp_IPT" case_sens="0" />
+    <system>0</system>
+    <visible>1</visible>
+    <fields>
+      <field>
+        <name>
+          <item name="PatientPK" case_sens="0" />
+        </name>
+        <type_name>int</type_name>
+        <type platform="net">Int32</type>
+        <size>4</size>
+        <precision>10</precision>
+        <scale>255</scale>
+        <nullable>0</nullable>
+      </field>
+      <field>
+        <name>
+          <item name="IPTStartDate" case_sens="0" />
+        </name>
+        <type_name>datetime</type_name>
+        <type platform="net">DateTime</type>
+        <size>8</size>
+        <precision>23</precision>
+        <scale>3</scale>
+      </field>
+      <field>
+        <name>
+          <item name="LastIPTDispense" case_sens="0" />
+        </name>
+        <type_name>datetime</type_name>
+        <type platform="net">DateTime</type>
+        <size>8</size>
+        <precision>23</precision>
+        <scale>3</scale>
+      </field>
+      <field>
+        <name>
+          <item name="MonthsOnIPT" case_sens="0" />
+        </name>
+        <type_name>int</type_name>
+        <type platform="net">Int32</type>
+        <size>4</size>
+        <precision>10</precision>
+        <scale>255</scale>
+        <nullable>0</nullable>
+      </field>
+      <field>
+        <name>
+          <item name="Medication" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>
+        <name>
+          <item name="IPTOutcome" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>
+      <field>        
+          <name>
+            <item name="DateOfOutcome" case_sens="0" />
+          </name>
+          <type_name>datetime</type_name>
+          <type platform="net">DateTime</type>
+          <size>8</size>
+          <precision>23</precision>
+          <scale>3</scale>
+      </field>
+      <field>
+        <name>
+          <item name="DiscontinuationReason" case_sens="0" />
+        </name>
+        <type_name>varchar</type_name>
+        <type platform="net">String</type>
+        <size>10</size>
+        <precision>255</precision>
+        <scale>255</scale>
+      </field>     
+    </fields>
+  </table>
+  
   <view>
 
     <schema name="dbo" case_sens="0" />

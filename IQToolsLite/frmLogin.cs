@@ -56,12 +56,12 @@ namespace IQToolsLite
                 //Set default webservices
                 using (StreamWriter writer = File.CreateText(webServiceList))
                 {
-                    writer.WriteLine("IQTools Server:CRS*http://iqtools.dyndns.org/IQToolsWebService/Service1.asmx");                    
-                    writer.WriteLine("IQTools Server:KE*http://iqtoolske.dnsdynamic.com:81/IQToolsWebService/Service1.asmx");
+                    writer.WriteLine("IQTools Server:*http://localhost/IQToolsWebService/Service1.asmx");                    
+                    /*writer.WriteLine("IQTools Server:KE*http://iqtoolske.dnsdynamic.com:81/IQToolsWebService/Service1.asmx");
                     writer.WriteLine("IQTools Server:TZ*http://41.73.195.220/iqtoolslite/Service1.asmx");
                     writer.WriteLine("IQTools SSL Server:KE*https://iqtoolske.dnsdynamic.com/IQToolsWebService/Service1.asmx");
                     writer.WriteLine("IQTools SSL Server:CRS*https://iqtools.dyndns.org/IQToolsWebServiceSSL/Service1.asmx");
-                    writer.WriteLine("IQTools Server:TEST*http://iqtools.dyndns.org/IQToolsWebServiceTest/Service1.asmx");
+                    writer.WriteLine("IQTools Server:TEST*http://iqtools.dyndns.org/IQToolsWebServiceTest/Service1.asmx");*/
                     writer.Flush();
                     writer.Dispose();
                 }
